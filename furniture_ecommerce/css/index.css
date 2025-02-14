@@ -1,0 +1,25 @@
+/* public css */
+body{
+    background-color: #f7f8fc;
+    font-family: "Ubuntu", serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.dark-color{
+    color: #616060;
+}
+.light-color{
+    color: #e89b2e;
+}
+.bg-dark-color{
+    color: #616060;
+}
+.bg-light-color{
+    color: #e89b2e;
+}
+
+/* private css */
