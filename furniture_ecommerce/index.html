@@ -13,9 +13,9 @@
 
 
     <!-- css files -->
-     <link href="css/all.min.css" rel="stylesheet"><!-- fontawesome -->
-     <link href="css/bootstrap.min.css" rel="stylesheet"><!-- bootstrap -->
-     <link href="css/index.css" rel="stylesheet"><!-- general style -->
+     <link rel="stylesheet" href="css/all.min.css" ><!-- fontawesome -->
+     <link rel="stylesheet" href="css/bootstrap.min.css"><!-- bootstrap -->
+     <link rel="stylesheet" href="css/index.css"><!-- general style -->
 </head>
 <body>
     <!-- start main -->
@@ -24,7 +24,7 @@
             <div class="row">
 
                 <!-- start nav -->
-                <nav class="navbar navbar-expand-lg bg-transparent py-3">
+                <nav class="navbar navbar-expand-lg py-3">
                     <div class="container-fluid">
                       <!-- logo -->
                       <a class="navbar-brand logo col-4" href="#">
@@ -40,7 +40,7 @@
                       <div class="collapse navbar-collapse col-8 d-flex align-items-center justify-content-between" id="navbarSupportedContent">
                         <ul class="navbar-nav fw-bold"><!-- links -->
                           <li class="nav-item"><!-- home -->
-                            <a class="nav-link bg-light-color" aria-current="page" href="#">Home</a>
+                            <a class="nav-link nav-active bg-light-color" aria-current="page" href="#">Home</a>
                           </li>
                           <li class="nav-item"><!-- new arrivals -->
                             <a class="nav-link" href="#">New Arrivals</a>
@@ -54,87 +54,161 @@
                           <li class="nav-item"><!-- contact -->
                             <a class="nav-link" href="#">Contact</a>
                           </li>
-
                         </ul>
 
-                        <ul class="services"><!-- services -->
-                          <li><i class="fa-solid fa-magnifying-glass"></i></li><!-- search -->
-                          <li><i class="fa-solid fa-gear"></i></li><!-- settings -->
-                          <li><i class="fa-solid fa-cart-shopping"></i></li><!-- cart -->
-                        </ul>
+                        <!-- services -->
+                        <div class="services">
+                          <span class="px-2">
+                            <a href="#"><i class="fa-solid fa-magnifying-glass dark-color"></i></a>
+                          </span><!-- search -->
+                          <span class="px-2">
+                            <a href="#"><i class="fa-solid fa-gear dark-color"></i></a>
+                          </span><!-- settings -->
+                          <span class="px-2">
+                            <a href="#"><i class="fa-solid fa-cart-shopping dark-color"></i></a>
+                          </span><!-- cart -->
+                        </div>
                       </div>
                     </div>
                 </nav>
                 <!-- end nav -->
 
                 <!-- start header -->
-                <header>
-                    <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <div class="d-flex align-items-center justify-content-between">
-                              <div class="txt col-5">
-                                <h6>great design collection</h6>
-                                <h3>cloth covered accent chair</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                                <span>
-                                  <span class="dark-color">$ 199.00</span>
-                                  <del>$ 499.00</mark></del>
-                                </span>
-                              </div>
-                              <div class="img col-5">
-                                <img src="assets/images/slider/slider1.png" class="img-fluid" alt="cloth covered accent chair">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="d-flex align-items-center justify-content-between">
-                              <div class="txt col-5">
-                                <h6>great design collection</h6>
-                                <h3>cloth covered accent chair</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                                <span>
-                                  <span class="dark-color">$ 199.00</span>
-                                  <del>$ 499.00</mark></del>
-                                </span>
-                              </div>
-                              <div class="img col-5">
-                                <img src="assets/images/slider/slider2.png" class="img-fluid" alt="mapple wood accent chair">                              
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="d-flex align-items-center justify-content-between">
-                              <div class="txt col-5">
-                                <h6>great design collection</h6>
-                                <h3>cloth covered accent chair</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                                <span>
-                                  <span class="dark-color">$ 199.00</span>
-                                  <del>$ 499.00</mark></del>
-                                </span>
-                              </div>
-                              <div class="img col-5">
-                                <img src="assets/images/slider/slider3.png" class="img-fluid" alt="valvet accent arm chair">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
+                <header class="py-5">
+                  <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <div>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                          <span><i class="fa-regular fa-circle-dot light-color"></i></span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+                          <span><i class="fa-regular fa-circle-dot light-color"></i></span>
+                        </button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+                          <span><i class="fa-regular fa-circle-dot light-color"></i></span>
                         </button>
                       </div>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="txt col-5">
+                            <h5 class="text-capitalize dark-color">great design collection</h5>
+                            <h1 class="text-capitalize">cloth covered accent chair</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                            <span>
+                              <span class="dark-color">$ 199.00</span>
+                              <del>$ 499.00</mark></del>
+                            </span>
+                            <div class="add-info mt-5">
+                              <a href="#" class="add-cart me-2">
+                                <span><i class="fa-solid fa-circle-plus"></i></span>
+                                Add to Cart
+                              </a>
+                              <a href="#" class="more-info">More Info</a>
+                            </div>
+                          </div>
+                          <div class="img col-5">
+                            <img src="assets/images/slider/slider1.png" class="img-fluid h-100" alt="cloth covered accent chair">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="txt col-5">
+                            <h5 class="text-capitalize dark-color">great design collection</h5>
+                            <h1 class="text-capitalize">cloth covered accent chair</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                            <span>
+                              <span class="dark-color">$ 199.00</span>
+                              <del>$ 499.00</mark></del>
+                            </span>
+                            <div class="add-info mt-5">
+                              <a href="#" class="add-cart me-2">
+                                <span><i class="fa-solid fa-circle-plus"></i></span>
+                                Add to Cart
+                              </a>
+                              <a href="#" class="more-info">More Info</a>
+                            </div>
+                          </div>
+                          <div class="img col-5">
+                            <img src="assets/images/slider/slider2.png" class="img-fluid h-100" alt="mapple wood accent chair">                              
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="txt col-5">
+                            <h5 class="text-capitalize dark-color">great design collection</h5>
+                            <h1 class="text-capitalize">cloth covered accent chair</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                            <span>
+                              <span class="dark-color">$ 199.00</span>
+                              <del>$ 499.00</mark></del>
+                            </span>
+                            <div class="add-info mt-5">
+                              <a href="#" class="add-cart me-2">
+                                <span><i class="fa-solid fa-circle-plus"></i></span>
+                                Add to Cart
+                              </a>
+                              <a href="#" class="more-info">More Info</a>
+                            </div>
+                          </div>
+                          <div class="img col-5">
+                            <img src="assets/images/slider/slider3.png" class="img-fluid h-100" alt="valvet accent arm chair">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </header>    
                 <!-- end header -->
 
                 <!-- start section discover more -->
                 <section class="discover-more">
-
+                  <div class="blocks d-flex flex-row align-items-center justify-content-between">
+                    <div class="block-1 col-3"><!-- block number 1 -->
+                      <div class="card border-0 text-center">
+                        <div class="img">
+                          <img src="assets/images/discover-more/p1.png">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="text-capitalize">arm chair</h5>
+                          <p class="card-text">
+                            Nemo enim ipsam voluptatem quia volu ptas sit asperna aut odit aut
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block-2 col-6 px-2"><!-- block number 2 -->
+                      <div class="card border-0 d-flex flex-row align-items-center justify-content-between">
+                        <div class="img pe-2">
+                          <img src="assets/images/discover-more/p2.png">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="text-capitalize">latest designed stool and chair</h5>
+                          <p class="card-text">
+                            Edi ut perspiciatis unde omnis iste natusina error sit voluptatem accusantium doloret mque laudantium, totam rem aperiam.
+                          </p>
+                          <p class="mb-4">Sales Start from <span class="light-color">$99.00</span></p>
+                          <a href="#" class="discover-btn">Discover More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block-3 col-3"><!-- block number 3 -->
+                      <div class="card border-0 text-center">
+                        <div class="img">
+                          <img src="assets/images/discover-more/p3.png">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="text-capitalize">hanging lamp</h5>
+                          <p class="card-text">
+                            Nemo enim ipsam voluptatem quia volu ptas sit asperna aut odit aut
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </section>
                 <!-- end section discover more -->
 

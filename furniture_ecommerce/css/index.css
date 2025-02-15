@@ -23,3 +23,63 @@ a{
 }
 
 /* private css */
+/* nav */
+nav{
+    background-color: #f7f8fc;
+}
+/* nav >> links */
+.navbar-nav .nav-active:hover{
+    color: #616060;
+}
+.navbar-nav a:hover{
+    color: #e89b2e;
+}
+/* nav >> services */
+.services svg:hover{
+    color: #e89b2e;
+}
+
+/* header */
+/* header >> slide */
+header .slide svg:hover{
+    color: #e89b2e;
+}
+/* header >> slide >> carousel-inner >> add-info */
+header .carousel-inner .add-info a.add-cart{
+    padding: 17px 25px;
+    background-color: #e89b2e;
+    border: 1px solid #e89b2e;
+    color: #f7f8fc;
+}
+header .carousel-inner .add-info a.add-cart:hover{
+    background-color: #f7f8fc;
+    color: #e89b2e;
+}
+header .carousel-inner .add-info a.more-info{
+    padding: 17px 35px;
+    background-color: #f7f8fc;
+    border: 1px solid #f7f8fc;
+    color: #e89b2e;
+}
+header .carousel-inner .add-info a.more-info:hover{
+    border: 1px solid #e89b2e;
+}
+
+/* discover more */
+/* discover more >> card */
+.card{
+    background-color: #ffffff;
+}
+/* discover more >> card >> card-body */
+.card .card-body a.discover-btn{
+    border:1px solid #585858;
+    padding: 12px 20px;
+    color: #585858;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.card .card-body a.discover-btn:hover{
+    border:1px solid #585858;
+    color: #f7f8fc;
+    background-color: #585858;
+}
