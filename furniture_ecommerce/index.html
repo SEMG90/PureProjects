@@ -19,458 +19,316 @@
 </head>
 <body>
     <!-- start main -->
-    <main>
+    <main>          
+      <!-- nav -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <div class="row">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
-                <!-- start nav -->
-                <nav class="navbar navbar-expand-lg py-3">
-                    <div class="container-fluid">
-                      <!-- logo -->
-                      <a class="navbar-brand logo col-4" href="#">
-                        <span class="dark-color">Sine</span><span class="light-color fw-bold">MKT</span>
-                      </a>
-
-                      <!-- nav button -->
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-
-                      <!-- nav links -->
-                      <div class="collapse navbar-collapse col-8 d-flex align-items-center justify-content-between" id="navbarSupportedContent">
-                        <ul class="navbar-nav fw-bold"><!-- links -->
-                          <li class="nav-item"><!-- home -->
-                            <a class="nav-link nav-active bg-light-color" aria-current="page" href="#">Home</a>
-                          </li>
-                          <li class="nav-item"><!-- new arrivals -->
-                            <a class="nav-link" href="#">New Arrivals</a>
-                          </li>
-                          <li class="nav-item"><!-- features -->
-                            <a class="nav-link" href="#">Features</a>
-                          </li>
-                          <li class="nav-item"><!-- blog -->
-                            <a class="nav-link" href="#">Blog</a>
-                          </li>
-                          <li class="nav-item"><!-- contact -->
-                            <a class="nav-link" href="#">Contact</a>
-                          </li>
-                        </ul>
-
-                        <!-- services -->
-                        <div class="services">
-                          <span class="px-2">
-                            <a href="#"><i class="fa-solid fa-magnifying-glass dark-color"></i></a>
-                          </span><!-- search -->
-                          <span class="px-2">
-                            <a href="#"><i class="fa-solid fa-gear dark-color"></i></a>
-                          </span><!-- settings -->
-                          <span class="px-2">
-                            <a href="#"><i class="fa-solid fa-cart-shopping dark-color"></i></a>
-                          </span><!-- cart -->
-                        </div>
-                      </div>
-                    </div>
-                </nav>
-                <!-- end nav -->
-
-                <!-- start header -->
-                <header class="py-5">
-                  <div id="carouselExampleCaptions" class="carousel slide">
-                    <div class="carousel-indicators">
-                      <div>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-                          <span><i class="fa-regular fa-circle-dot light-color"></i></span>
-                        </button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
-                          <span><i class="fa-regular fa-circle-dot light-color"></i></span>
-                        </button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
-                          <span><i class="fa-regular fa-circle-dot light-color"></i></span>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="txt col-5">
-                            <h5 class="text-capitalize dark-color">great design collection</h5>
-                            <h1 class="text-capitalize">cloth covered accent chair</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                            <span>
-                              <span class="dark-color">$ 199.00</span>
-                              <del>$ 499.00</mark></del>
-                            </span>
-                            <div class="add-info mt-5">
-                              <a href="#" class="add-cart me-2">
-                                <span><i class="fa-solid fa-circle-plus"></i></span>
-                                Add to Cart
-                              </a>
-                              <a href="#" class="more-info">More Info</a>
-                            </div>
-                          </div>
-                          <div class="img col-5 h-75">
-                            <img src="assets/images/slider/slider1.png" class="img-fluid h-100" alt="cloth covered accent chair">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="txt col-5">
-                            <h5 class="text-capitalize dark-color">great design collection</h5>
-                            <h1 class="text-capitalize">cloth covered accent chair</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                            <span>
-                              <span class="dark-color">$ 199.00</span>
-                              <del>$ 499.00</mark></del>
-                            </span>
-                            <div class="add-info mt-5">
-                              <a href="#" class="add-cart me-2">
-                                <span><i class="fa-solid fa-circle-plus"></i></span>
-                                Add to Cart
-                              </a>
-                              <a href="#" class="more-info">More Info</a>
-                            </div>
-                          </div>
-                          <div class="img col-5 h-75">
-                            <img src="assets/images/slider/slider2.png" class="img-fluid h-100" alt="mapple wood accent chair">                              
-                          </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="txt col-5">
-                            <h5 class="text-capitalize dark-color">great design collection</h5>
-                            <h1 class="text-capitalize">cloth covered accent chair</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                            <span>
-                              <span class="dark-color">$ 199.00</span>
-                              <del>$ 499.00</mark></del>
-                            </span>
-                            <div class="add-info mt-5">
-                              <a href="#" class="add-cart me-2">
-                                <span><i class="fa-solid fa-circle-plus"></i></span>
-                                Add to Cart
-                              </a>
-                              <a href="#" class="more-info">More Info</a>
-                            </div>
-                          </div>
-                          <div class="img col-5 h-75">
-                            <img src="assets/images/slider/slider3.png" class="img-fluid h-100" alt="valvet accent arm chair">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </header>    
-                <!-- end header -->
-
-                <!-- start section discover more -->
-                <section class="discover-more my-5">
-                  <div class="blocks d-flex flex-column flex-lg-row">
-                    <div class="b-1 col-12 col-lg-3">
-                      <div class="card border-0">
-                        <div class="card-body text-center">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="b-2 col-12 col-lg-6">
-                      <div class="card border-0 my-2">
-                        <div class="card-body text-center">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="b-3 col-12 col-lg-3">
-                      <div class="card border-0">
-                        <div class="card-body text-center">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    
-                  </div>
-                </section>
-                <!-- end section discover more -->
-
-                <!-- start section new arrival -->
-                <section class="arrival">
-                  <h1 class="text-capitalize text-center">new arrivals</h1>
-                  <div id="cbox" class="cbox d-flex flex-column flex-md-row flex-wrap">
-                    <div class="card py-2 col-12 col-sm-4 col-lg-3 border-0 p-2 bg-transparent">
-                      <span class="sale text-white text-capitalize py-1 px-3 position-absolute end-0 z-1">Sale</span>
-                      <img src="assets/images/collection/wooden chair.png" class="card-img-top img-fluid position-relative" alt="wooden chair">
-                      <div class="card-body bg-dark d-flex flex-row align-items-center justify-content-between">
-                          <div class="cart">
-                          <span><i class="fa-solid fa-cart-shopping f-small text-white me-2"></i></span>
-                          <span class="f-small text-white">Add to Cart</span>
-                          </div>
-                          <div class="heart">
-                          <span><i class="fa-regular fa-heart f-small text-white me-2"></i></span>
-                          <span><i class="fa-solid fa-expand f-small text-white"></i></span>
-                          </div>
-                      </div>
-                      <div class="card-footer text-center bg-transparent">
-                          <h6 class="txt text-capitalize">wooden chair</h6>
-                          <p class="text-capitalize">$65.00</p>
-                      </div>
-                    </div>
-                    <div class="card col-12 col-sm-4 col-lg-3 border-0 p-2 bg-transparent">
-                      <span class="sale text-white text-capitalize py-1 px-3 position-absolute end-0 z-1">Sale</span>
-                      <img src="assets/images/collection/wooden chair.png" class="card-img-top img-fluid position-relative" alt="wooden chair">
-                      <div class="card-body bg-dark d-flex flex-row align-items-center justify-content-between">
-                          <div class="cart">
-                          <span><i class="fa-solid fa-cart-shopping f-small text-white me-2"></i></span>
-                          <span class="f-small text-white">Add to Cart</span>
-                          </div>
-                          <div class="heart">
-                          <span><i class="fa-regular fa-heart f-small text-white me-2"></i></span>
-                          <span><i class="fa-solid fa-expand f-small text-white"></i></span>
-                          </div>
-                      </div>
-                      <div class="card-footer text-center bg-transparent">
-                          <h6 class="txt text-capitalize">wooden chair</h6>
-                          <p class="text-capitalize">$65.00</p>
-                      </div>
-                    </div>
-                    <div class="card col-12 col-sm-4 col-lg-3 border-0 p-2 bg-transparent">
-                      <span class="sale text-white text-capitalize py-1 px-3 position-absolute end-0 z-1">Sale</span>
-                      <img src="assets/images/collection/wooden chair.png" class="card-img-top img-fluid position-relative" alt="wooden chair">
-                      <div class="card-body bg-dark d-flex flex-row align-items-center justify-content-between">
-                          <div class="cart">
-                          <span><i class="fa-solid fa-cart-shopping f-small text-white me-2"></i></span>
-                          <span class="f-small text-white">Add to Cart</span>
-                          </div>
-                          <div class="heart">
-                          <span><i class="fa-regular fa-heart f-small text-white me-2"></i></span>
-                          <span><i class="fa-solid fa-expand f-small text-white"></i></span>
-                          </div>
-                      </div>
-                      <div class="card-footer text-center bg-transparent">
-                          <h6 class="txt text-capitalize">wooden chair</h6>
-                          <p class="text-capitalize">$65.00</p>
-                      </div>
-                    </div>
-                    <div class="card col-12 col-sm-4 col-lg-3 border-0 p-2 bg-transparent">
-                      <span class="sale text-white text-capitalize py-1 px-3 position-absolute end-0 z-1">Sale</span>
-                      <img src="assets/images/collection/wooden chair.png" class="card-img-top img-fluid position-relative" alt="wooden chair">
-                      <div class="card-body bg-dark d-flex flex-row align-items-center justify-content-between">
-                          <div class="cart">
-                          <span><i class="fa-solid fa-cart-shopping f-small text-white me-2"></i></span>
-                          <span class="f-small text-white">Add to Cart</span>
-                          </div>
-                          <div class="heart">
-                          <span><i class="fa-regular fa-heart f-small text-white me-2"></i></span>
-                          <span><i class="fa-solid fa-expand f-small text-white"></i></span>
-                          </div>
-                      </div>
-                      <div class="card-footer text-center bg-transparent">
-                          <h6 class="txt text-capitalize">wooden chair</h6>
-                          <p class="text-capitalize">$65.00</p>
-                      </div>
-                    </div>
-                    <div class="card col-12 col-sm-4 col-lg-3 border-0 p-2 bg-transparent">
-                      <span class="sale text-white text-capitalize py-1 px-3 position-absolute end-0 z-1">Sale</span>
-                      <img src="assets/images/collection/wooden chair.png" class="card-img-top img-fluid position-relative" alt="wooden chair">
-                      <div class="card-body bg-dark d-flex flex-row align-items-center justify-content-between">
-                          <div class="cart">
-                          <span><i class="fa-solid fa-cart-shopping f-small text-white me-2"></i></span>
-                          <span class="f-small text-white">Add to Cart</span>
-                          </div>
-                          <div class="heart">
-                          <span><i class="fa-regular fa-heart f-small text-white me-2"></i></span>
-                          <span><i class="fa-solid fa-expand f-small text-white"></i></span>
-                          </div>
-                      </div>
-                      <div class="card-footer text-center bg-transparent">
-                          <h6 class="txt text-capitalize">wooden chair</h6>
-                          <p class="text-capitalize">$65.00</p>
-                      </div>
-                    </div>
-                    <div class="card col-12 col-sm-4 col-lg-3 border-0 p-2 bg-transparent">
-                      <span class="sale text-white text-capitalize py-1 px-3 position-absolute end-0 z-1">Sale</span>
-                      <img src="assets/images/collection/wooden chair.png" class="card-img-top img-fluid position-relative" alt="wooden chair">
-                      <div class="card-body bg-dark d-flex flex-row align-items-center justify-content-between">
-                          <div class="cart">
-                          <span><i class="fa-solid fa-cart-shopping f-small text-white me-2"></i></span>
-                          <span class="f-small text-white">Add to Cart</span>
-                          </div>
-                          <div class="heart">
-                          <span><i class="fa-regular fa-heart f-small text-white me-2"></i></span>
-                          <span><i class="fa-solid fa-expand f-small text-white"></i></span>
-                          </div>
-                      </div>
-                      <div class="card-footer text-center bg-transparent">
-                          <h6 class="txt text-capitalize">wooden chair</h6>
-                          <p class="text-capitalize">$65.00</p>
-                      </div>
-                    </div>
-                    <div class="card col-12 col-sm-4 col-lg-3 border-0 p-2 bg-transparent">
-                      <span class="sale text-white text-capitalize py-1 px-3 position-absolute end-0 z-1">Sale</span>
-                      <img src="assets/images/collection/wooden chair.png" class="card-img-top img-fluid position-relative" alt="wooden chair">
-                      <div class="card-body bg-dark d-flex flex-row align-items-center justify-content-between">
-                          <div class="cart">
-                          <span><i class="fa-solid fa-cart-shopping f-small text-white me-2"></i></span>
-                          <span class="f-small text-white">Add to Cart</span>
-                          </div>
-                          <div class="heart">
-                          <span><i class="fa-regular fa-heart f-small text-white me-2"></i></span>
-                          <span><i class="fa-solid fa-expand f-small text-white"></i></span>
-                          </div>
-                      </div>
-                      <div class="card-footer text-center bg-transparent">
-                          <h6 class="txt text-capitalize">wooden chair</h6>
-                          <p class="text-capitalize">$65.00</p>
-                      </div>
-                    </div>
-                    <div class="card col-12 col-sm-4 col-lg-3 border-0 p-2 bg-transparent">
-                      <span class="sale text-white text-capitalize py-1 px-3 position-absolute end-0 z-1">Sale</span>
-                      <img src="assets/images/collection/wooden chair.png" class="card-img-top img-fluid position-relative" alt="wooden chair">
-                      <div class="card-body bg-dark d-flex flex-row align-items-center justify-content-between">
-                          <div class="cart">
-                          <span><i class="fa-solid fa-cart-shopping f-small text-white me-2"></i></span>
-                          <span class="f-small text-white">Add to Cart</span>
-                          </div>
-                          <div class="heart">
-                          <span><i class="fa-regular fa-heart f-small text-white me-2"></i></span>
-                          <span><i class="fa-solid fa-expand f-small text-white"></i></span>
-                          </div>
-                      </div>
-                      <div class="card-footer text-center bg-transparent">
-                          <h6 class="txt text-capitalize">wooden chair</h6>
-                          <p class="text-capitalize">$65.00</p>
-                      </div>
-                    </div>                    
-                  </div>
-                </section>
-                <!-- end section new arrival -->
-
-                <!-- start section collection -->
-                <section class="collection">
-
-                </section>
-                <!-- end section collection -->
-
-                <!-- start section products -->
-                <section class="products">
-                    <div class="p-level1">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-level2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- end section products -->
-
-                <!-- start section blog -->
-                <section class="blog">
-                    <div class="b-level">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- end section blog -->
-
-                <!-- start section brands -->
-                <section class="brands">
-
-                </section>
-                <!-- end section brands -->
-
-                <footer>
-                    <div class="links">
-
-                    </div>
-
-                    <div class="copyright">
-
-                    </div>
-                </footer>
+      <!-- slider -->
+        <header>
+        <div class="container">
+          <div class="row">
+            <div class="slider">
 
             </div>
+          </div>
         </div>
+        </header>
+
+      <!-- discover -->
+        <section class="discover py-4">
+        <div class="container">
+          <div class="row">
+            <div class="block d-flex flex-column flex-lg-row gap-1">
+              <!-- card-1 -->
+              <div class="card col-12 col-lg-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <!-- card-2 -->
+              <div class="card col-12 col-lg-6">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <!-- card-3 -->
+              <div class="card col-12 col-lg-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+      <!-- arrival -->
+        <section class="arrival py-4">
+        <div class="container">
+          <div class="row">
+            <h2 class="text-capitalize text-center">new arrivals</h2>
+            <div class="block d-flex flex-column flex-lg-row flex-lg-wrap">
+              <div class="card col-12 col-lg-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+      <!-- collection -->
+      <sction class="collection">
+        <div class="container">
+          <div class="row">
+            <div class="block">
+
+            </div>
+          </div>
+        </div>
+      </sction> 
+
+      <!-- products -->
+      <section class="products py-4">
+        <div class="container">
+          <div class="row">
+            <h2 class="text-capitalize text-center">featured products</h2>
+            <div class="block d-flex flex-column flex-lg-row flex-lg-wrap">
+              <div class="card col-12 col-lg-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <!-- blog -->
+      <section class="blog py-4">
+        <div class="container">
+          <div class="row">
+            <h2 class="text-capitalize text-center">latest blog</h2>
+            <div class="block d-flex flex-column flex-lg-row flex-lg-wrap">
+              <div class="card col-12 col-lg-4">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-4">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-4">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <!-- clients -->
+      <section class="clients py-4">
+        <div class="container">
+          <div class="row">
+            <div class="block d-flex flex-column flex-sm-row flex-sm-wrap align-items-lg-center justify-content-lg-around bg-clients-color gap-4 py-3">
+              <div class="card col-12 my-sm-4 col-md-2 col-lg-2 border-0">
+                <img src="assets/images/clients/addidas.png" class="w-50 m-auto" alt="addidas">
+              </div>
+              <div class="card col-12 my-sm-4 col-md-2 col-lg-2 border-0">
+                <img src="assets/images/clients/h&m.png" class="w-50 m-auto" alt="h&m">
+              </div>
+              <div class="card col-12 my-sm-4 col-md-2 col-lg-2 border-0">
+                <img src="assets/images/clients/kappa.png" class="w-50 m-auto" alt="kappa">
+              </div>
+              <div class="card col-12 my-sm-4 d col-md-2 col-lg-2 border-0">
+                <img src="assets/images/clients/lacoste.png" class="w-50 m-auto" alt="lacoste">
+              </div>
+              <div class="card col-12 my-sm-4 col-md-2 col-lg-2 border-0">
+                <img src="assets/images/clients/levis.png" class="w-50 m-auto" alt="levis">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section> 
+
+      <section class="footer-links">
+        <div class="container">
+          <div class="row">
+            <div class="block">
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="py-4  text-center">
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <ul>
+                <li class="my-2"><!-- social media -->
+                  <a href="#" class="mx-2"><i class="fa-brands fa-facebook-f f-small dark-color"></i></a>
+                  <a href="#" class="mx-2"><i class="fa-brands fa-instagram f-small dark-color"></i></a>
+                  <a href="#" class="mx-2"><i class="fa-brands fa-linkedin-in f-small dark-color"></i></a>
+                  <a href="#" class="mx-2"><i class="fa-brands fa-google f-small dark-color"></i></a>
+                  <a href="#" class="mx-2"><i class="fa-brands fa-behance f-small dark-color"></i></a>
+                </li>
+                <li><!-- copyrights -->
+                  <span class="text-capitalize f-small dark-color">
+                    ©copyright. designed and developed by themesine
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
     <!-- end main -->
 
