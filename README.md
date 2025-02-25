@@ -1,5 +1,5 @@
 # PureProjects
-# furniture ecommerce project
+# furniture ecommerce project (single web applicatio)
   => uses in this project (html, css, bootstrap 5, some js).
 
 # project consists of:-

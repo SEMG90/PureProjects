@@ -50,6 +50,23 @@ a{
 
 /* special css */
 
+/* section:nav */
+/* nav >> navbar-nav */
+nav .navbar-nav a.first-link{
+    color: var(--light-color);
+}
+nav .navbar-nav a.first-link:hover{
+    color: var(--dark-color);
+}
+nav .navbar-nav a{
+    color: var(--dark-color);
+    transition: 0.5s;
+    font-weight: 600;
+}
+nav .navbar-nav a:hover{
+    color: var(--light-color);
+}
+
 /* section:header */
 /* header >> slider */
 header .slider{
@@ -58,6 +75,14 @@ header .slider{
     height:750px;
 }
 
+/* section:discover */
+/* discover >> card */
+.discover .card{
+    border-radius: 0;
+}
+.discover .card .btn{
+    border-radius: 0;
+}
 /* section:colection */
 .collection{
     background-color: var(--bg-dark-color);
@@ -82,4 +107,16 @@ header .slider{
 }
 .footer-links .in-mail input:focus{
     border: 0px;
+}
+
+/* div:arrow */
+.arrow{
+    bottom: 25px;
+    right: 35px;
+}
+.arrow a svg{
+    color: var(--dark-color);
+}
+.arrow a svg:hover{
+    color: var(--light-color);
 }
