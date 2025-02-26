@@ -83,11 +83,95 @@ header .slider{
 .discover .card .btn{
     border-radius: 0;
 }
+
+/* section:arrival */
+/* arrival >> card */
+.arrival .card{
+    background-color: var(--master-color);
+    padding: 0 10px;
+}
+/* arrival >> card-img */
+.arrival .card-img{
+    padding: 70px 10px;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+}
+/* arrival >> card-img >> before */
+.arrival .card-img .before{
+    height: 150px;
+}
+.arrival .card-img .before::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    transition: 0.5s;
+}
+.arrival .card-img .before:hover::before{
+    background-color: rgb(236, 236, 236,0.5);
+}
+.arrival .card-img .before::after{
+    position: absolute;
+    content: "Sale";
+    color: var(--master-color);
+    top: 10px;
+    right: 0;
+    width: 80px;
+    padding: 5px 0;
+    background-color:var(--bg-light-color);
+}
+/* arrival >> card-img >> before >> img */
+.arrival .card-img img{
+    transform: scale(0.75,0.75);
+    transition: 0.5s;
+}
+.arrival .card-img:hover img{
+    transform: scale(0.9,0.9);
+}
+/* arrival >> card-img >> before >> img-body */
+.arrival .card-img .before .img-body{
+    background-color: var(--bg-dark-color);
+    padding: 10px 10px;
+    color: var(--master-color);
+    font-size: 12px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.arrival .card-img .before:hover .img-body{
+    opacity: 1;
+}
+.arrival .card-img .before .img-body a{
+    color: var(--master-color);
+}
 /* section:colection */
 .collection{
+    background-image: url('../assets/images/collection/table-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: var(--bg-dark-color);
     width: 100%;
-    height:400px;
+    height: auto;
+    padding: 150px 0;
+}
+/* collection >> btn-view */
+.collection .btn-view{
+    background-color: var(--bg-light-color);
+    border-radius: 0;
+    color: var(--master-color);
+    border: 2px solid var(--bg-light-color);
+    padding: 10px 20px;
+}
+.collection .btn-view:hover{
+    border: 2px solid var(--bg-light-color);
+    background-color: transparent;
+    color: var(--dark-color);
 }
 
 /* section:footer-links */
