@@ -21,7 +21,7 @@
     <!-- start main -->
     <main>          
       <!-- nav -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg position-sticky">
         <div class="container">
           <a class="navbar-brand" href="#home">
             <span class="dark-color fw-bold h3">sine</span><span class="light-color fw-light h3">MKT</span>
@@ -74,7 +74,7 @@
         </header>
 
       <!-- discover -->
-        <section class="discover py-4">
+        <section class="discover">
         <div class="container">
           <div class="row">
             <div class="block d-flex flex-column flex-lg-row gap-4 gap-lg-2">
@@ -110,13 +110,13 @@
         </section>
 
       <!-- arrival -->
-        <section class="arrival py-4" id="arrival">
+        <section class="arrival" id="arrival">
         <div class="container">
           <div class="row">
             <h2 class="text-capitalize text-center py-4">new arrivals</h2>
             <div class="block d-flex flex-column flex-lg-row flex-lg-wrap">
               <div class="card col-12 col-lg-3 border-0 py-2">
-                <div class="card-img text-center bg-white">
+                <div class="card-img text-center m-2">
                   <div class="before">
                     <img src="assets/images/collection/arm chair.png" class="card-img-top w-50" alt="arm chair">
                     <div class="img-body position-absolute start-0 end-0 bottom-0 d-flex flex-row align-items-center justify-content-between">
@@ -137,7 +137,7 @@
                 </div>
               </div>
               <div class="card col-12 col-lg-3 border-0 py-2">
-                <div class="card-img text-center bg-white">
+                <div class="card-img text-center">
                   <div class="before">
                     <img src="assets/images/collection/single armchair.png" class="card-img-top w-50" alt="single armchair">
                     <div class="img-body position-absolute start-0 end-0 bottom-0 d-flex flex-row align-items-center justify-content-between">
@@ -158,7 +158,7 @@
                 </div>
               </div>
               <div class="card col-12 col-lg-3 border-0 py-2">
-                <div class="card-img text-center bg-white">
+                <div class="card-img text-center">
                   <div class="before">
                     <img src="assets/images/collection/wooden armchair.png" class="card-img-top w-50" alt="wooden armchair">
                     <div class="img-body position-absolute start-0 end-0 bottom-0 d-flex flex-row align-items-center justify-content-between">
@@ -179,7 +179,7 @@
                 </div>
               </div>
               <div class="card col-12 col-lg-3 border-0 py-2">
-                <div class="card-img text-center bg-white">
+                <div class="card-img text-center">
                   <div class="before">
                     <img src="assets/images/collection/stylish chair.png" class="card-img-top w-50" alt="stylish chair">
                     <div class="img-body position-absolute start-0 end-0 bottom-0 d-flex flex-row align-items-center justify-content-between">
@@ -200,7 +200,7 @@
                 </div>
               </div>
               <div class="card col-12 col-lg-3 border-0 py-2">
-                <div class="card-img text-center bg-white">
+                <div class="card-img text-center">
                   <div class="before">
                     <img src="assets/images/collection/modern chair.png" class="card-img-top w-50" alt="modern chair">
                     <div class="img-body position-absolute start-0 end-0 bottom-0 d-flex flex-row align-items-center justify-content-between">
@@ -221,7 +221,7 @@
                 </div>
               </div>
               <div class="card col-12 col-lg-3 border-0 py-2">
-                <div class="card-img text-center bg-white">
+                <div class="card-img text-center">
                   <div class="before">
                     <img src="assets/images/collection/mapple wood dinning table.png" class="card-img-top w-75" alt="mapple wood dinning table">
                     <div class="img-body position-absolute start-0 end-0 bottom-0 d-flex flex-row align-items-center justify-content-between">
@@ -242,7 +242,7 @@
                 </div>
               </div>
               <div class="card col-12 col-lg-3 border-0 py-2">
-                <div class="card-img text-center bg-white">
+                <div class="card-img text-center">
                   <div class="before">
                     <img src="assets/images/collection/wooden chair.png" class="card-img-top w-50" alt="wooden chair">
                     <div class="img-body position-absolute start-0 end-0 bottom-0 d-flex flex-row align-items-center justify-content-between">
@@ -263,7 +263,7 @@
                 </div>
               </div>
               <div class="card col-12 col-lg-3 border-0 py-2">
-                <div class="card-img text-center bg-white">
+                <div class="card-img text-center">
                   <div class="before">
                     <img src="assets/images/collection/wooden bed.png" class="card-img-top w-75" alt="wooden bed">
                     <div class="img-body position-absolute start-0 end-0 bottom-0 d-flex flex-row align-items-center justify-content-between">
@@ -303,41 +303,69 @@
       </section> 
 
       <!-- products -->
-      <section class="products py-4" id="features">
+      <section class="products" id="features">
         <div class="container">
           <div class="row">
-            <h2 class="text-capitalize text-center">featured products</h2>
+            <h2 class="text-capitalize text-center py-4">featured products</h2>
             <div class="block d-flex flex-column flex-lg-row flex-lg-wrap">
-              <div class="card col-12 col-lg-3">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="card col-12 col-lg-3 border-0 px-2">
+                <img src="assets/images/products/f1.jpg" class="card-img-top" alt="f1">
+                <div class="card-body text-center">
+                  <div class="review">
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star dark-color"></i></span>
+                    <span class="text-capitalize dark-color">(45 Review)</span>
+                  </div>
+                  <h6 class="card-title text-capitalize dark-color my-2">designed sofa</h6>
+                  <p class="card-text dark-color">$160.00</p>
                 </div>
               </div>
-              <div class="card col-12 col-lg-3">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="card col-12 col-lg-3 border-0 px-2">
+                <img src="assets/images/products/f2.jpg" class="card-img-top" alt="f2">
+                <div class="card-body text-center">
+                  <div class="review">
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star dark-color"></i></span>
+                    <span class="text-capitalize dark-color">(45 Review)</span>
+                  </div>
+                  <h6 class="card-title text-capitalize dark-color my-2">dinning table</h6>
+                  <p class="card-text dark-color">$200.00</p>
                 </div>
               </div>
-              <div class="card col-12 col-lg-3">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="card col-12 col-lg-3 border-0 px-2">
+                <img src="assets/images/products/f3.jpg" class="card-img-top" alt="f3">
+                <div class="card-body text-center">
+                  <div class="review">
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star dark-color"></i></span>
+                    <span class="text-capitalize dark-color">(45 Review)</span>
+                  </div>
+                  <h6 class="card-title text-capitalize dark-color my-2">chair and table</h6>
+                  <p class="card-text dark-color">$100.00</p>
                 </div>
               </div>
-              <div class="card col-12 col-lg-3">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="card col-12 col-lg-3 border-0 px-2">
+                <img src="assets/images/products/f4.jpg" class="card-img-top" alt="f4">
+                <div class="card-body text-center">
+                  <div class="review">
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star light-color"></i></span>
+                    <span><i class="fa-solid fa-star dark-color"></i></span>
+                    <span class="text-capitalize dark-color">(45 Review)</span>
+                  </div>
+                  <h6 class="card-title text-capitalize dark-color my-2">modern arm chair</h6>
+                  <p class="card-text dark-color">$299.00</p>
                 </div>
               </div>
             </div>
@@ -346,33 +374,39 @@
       </section> 
 
       <!-- blog -->
-      <section class="blog py-4" id="blog">
+      <section class="blog" id="blog">
         <div class="container">
           <div class="row">
-            <h2 class="text-capitalize text-center">latest blog</h2>
+            <h2 class="text-capitalize text-center py-4">latest blog</h2>
             <div class="block d-flex flex-column flex-lg-row flex-lg-wrap">
-              <div class="card col-12 col-lg-4">
-                <img src="..." class="card-img-top" alt="...">
+              <div class="card col-12 col-lg-4 border-0 px-2">
+                <img src="assets/images/blog/b1.jpg" class="card-img-top" alt="b1">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h6 class="card-title text-capitalize">Why Brands are Looking at Local Language</h6>
+                  <h6 class="text-capitalize f-small my-3">By Robert Norby / 18th March 2018</h6>
+                  <p class="card-text f-small">
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                  </p>
                 </div>
               </div>
-              <div class="card col-12 col-lg-4">
-                <img src="..." class="card-img-top" alt="...">
+              <div class="card col-12 col-lg-4 border-0 px-2">
+                <img src="assets/images/blog/b2.jpg" class="card-img-top" alt="b2">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h6 class="card-title text-capitalize">Why Brands are Looking at Local Language</h6>
+                  <h6 class="text-capitalize f-small my-3">By Robert Norby / 18th March 2018</h6>
+                  <p class="card-text f-small">
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                  </p>
                 </div>
               </div>
-              <div class="card col-12 col-lg-4">
-                <img src="..." class="card-img-top" alt="...">
+              <div class="card col-12 col-lg-4 border-0 px-2">
+                <img src="assets/images/blog/b3.jpg" class="card-img-top" alt="b3">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h6 class="card-title text-capitalize">Why Brands are Looking at Local Language</h6>
+                  <h6 class="text-capitalize f-small my-3">By Robert Norby / 18th March 2018</h6>
+                  <p class="card-text f-small">
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                  </p>
                 </div>
               </div>
             </div>
@@ -381,23 +415,23 @@
       </section> 
 
       <!-- clients -->
-      <section class="clients py-4">
+      <section class="clients py-5 bg-clients-color">
         <div class="container">
           <div class="row">
-            <div class="block d-flex flex-column flex-sm-row flex-sm-wrap align-items-lg-center justify-content-lg-around bg-clients-color gap-4 py-3">
-              <div class="card col-12 my-sm-4 col-md-2 col-lg-2 border-0">
+            <div class="block d-flex flex-column flex-sm-row flex-sm-wrap align-items-lg-center justify-content-lg-around gap-4 py-3">
+              <div class="card col-12 my-sm-4 col-md-2 col-lg-2 border-0  bg-clients-color">
                 <img src="assets/images/clients/addidas.png" class="w-50 m-auto" alt="addidas">
               </div>
-              <div class="card col-12 my-sm-4 col-md-2 col-lg-2 border-0">
+              <div class="card col-12 my-sm-4 col-md-2 col-lg-2 border-0 bg-clients-color">
                 <img src="assets/images/clients/h&m.png" class="w-50 m-auto" alt="h&m">
               </div>
-              <div class="card col-12 my-sm-4 col-md-2 col-lg-2 border-0">
+              <div class="card col-12 my-sm-4 col-md-2 col-lg-2 border-0 bg-clients-color">
                 <img src="assets/images/clients/kappa.png" class="w-50 m-auto" alt="kappa">
               </div>
-              <div class="card col-12 my-sm-4 d col-md-2 col-lg-2 border-0">
+              <div class="card col-12 my-sm-4 d col-md-2 col-lg-2 border-0 bg-clients-color">
                 <img src="assets/images/clients/lacoste.png" class="w-50 m-auto" alt="lacoste">
               </div>
-              <div class="card col-12 my-sm-4 col-md-2 col-lg-2 border-0">
+              <div class="card col-12 my-sm-4 col-md-2 col-lg-2 border-0 bg-clients-color">
                 <img src="assets/images/clients/levis.png" class="w-50 m-auto" alt="levis">
               </div>
             </div>
@@ -465,7 +499,7 @@
       </section>
 
       <!-- footer -->
-      <footer class="py-4  text-center">
+      <footer class="py-4 text-center bg-clients-color">
         <div class="footer">
           <div class="container">
             <div class="row">
