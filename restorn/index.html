@@ -5,68 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- fonts google -->
+     <!-- Roboto >> general font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Rock Salt >> logo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap" rel="stylesheet">
     <!-- css files -->
      <link href="css/all.min.css" rel="stylesheet">
      <link href="css/bootstrap.min.css" rel="stylesheet">
-     <link href="css/index.css" rel="styleshet">
+     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
     <main>
       <!-- start header -->
       <header class="header" id="header">
         <!-- start nav -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-3">
+          <div class="container">
+            <a class="navbar-brand p-0" href="#header">
+              <h1 class="text-primary m-0"><!-- logo -->
+                <span><i class="fa-solid fa-utensils light-color"></i></span>
+                <span class="text-capitalize logo-font light-color px-3">restorn</span>
+              </h1>
+            </a>
+            <button class="navbar-toggler" type="submit"><!-- bar for collapse -->
+              <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse"><!-- links -->
+              <div class="navbar-nav ms-auto py-0 pe-4">
+                <a href="#" class="nav-item nav-link active text-capitalize">home</a>
+                <a href="#" class="nav-item nav-link text-capitalize">about</a>
+                <a href="#" class="nav-item nav-link text-capitalize">service</a>
+                <a href="#" class="nav-item nav-link text-capitalize">menu</a>
+                <a href="#" class="nav-item nav-link text-capitalize">pages</a>
+                <a href="#" class="nav-item nav-link text-capitalize">contact</a>
+              </div>
+              <a href="#" class="btn btn-warning btn-shape-border py-2 px-4 text-capitalize">book a table</a>
+              
+            </div>
           </div>
-        </div>
         </nav>
         <!-- end nav -->
 
         <!-- start carousel -->
-        <div class="carousel">
+        <div class="carousel bg-dark mb-5 py-5">
           <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
+              <div class="content col-lg-6 text-center text-lg-start"><!-- content -->
+                <h1 class="display-3 text-white animated text-capitalize bold-500">
+                  enjoy our
+                  <br>
+                  delicious meal
+                </h1>
+                <p class="text-white animated mb-4 pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore atque molestiae consequatur. Corrupti sapiente incidunt sequi! Officiis alias aliquid voluptatum.</p>
+                <a href="#" class="btn btn-warning py-sm-3 px-sm-5 text-capitalize btn-shape-border">book a table</a>
+              </div>
 
-              <!-- content -->
-               <div class="content">
-
-               </div>
-
-              <!-- image animation -->
-               <div class="image-ani">
-
-               </div> 
+              <div class="image col-lg-6 text-center text-lg-end overflow-hidden"><!-- image animation -->
+                <img src="assets/images/cover-animation.png" alt="Food Healthy" class="img-fluid w-100">
+              </div> 
             </div>
           </div>
         </div>
@@ -75,47 +77,39 @@
       <!-- end header -->
 
       <!-- start service -->
-       <section class="service" id="service">
+       <section class="service py-5" id="service">
         <div class="container">
-          <div class="row">
+          <div class="row g-4">
 
             <!-- service-card -->
-             <div class="service-card d-flex flex-column flex-md-row gap-3">
-              <div class="card" col-12 col-md-6 col-lg-3 border-0">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+             <div class="service-card d-flex flex-column flex-lg-row gap-3">
+              <div class="card col-12 col-lg-3 border-0">
+                <span>
+                  <i class="fa-solid fa-user-tie h1 light-color"></i>
+                  <h6 class="text-capitalize bold-800">master chefs</h6>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
+                </span>
               </div>
-              <div class="card" col-12 col-md-6 col-lg-3 border-0>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <div class="card col-12 col-lg-3 border-0">
+                <span>
+                  <i class="fa-solid fa-utensils h1 light-color"></i>
+                  <h6 class="text-capitalize bold-800">quality chefs</h6>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
+                </span>
               </div>
-              <div class="card" col-12 col-md-6 col-lg-3 border-0>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <div class="card col-12 col-lg-3 border-0">
+                <span>
+                  <i class="fa-solid fa-cart-plus h1 light-color"></i>
+                  <h6 class="text-capitalize bold-800">quality food</h6>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
+                </span>
               </div>
-              <div class="card" col-12 col-md-6 col-lg-3 border-0>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <div class="card col-12 col-lg-3 border-0">
+                <span>
+                  <i class="fa-solid fa-headset h1 light-color"></i>
+                  <h6 class="text-capitalize bold-800">24/7 service</h6>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
+                </span>
               </div>
              </div>
           </div>
@@ -123,35 +117,84 @@
        </section>
 
       <!-- start about -->
-       <section class="about" id="about">
+       <section class="about py-5" id="about">
         <div class="container">
-          <div class="row">
-
-            <!-- div -->
-            <div>
+          <div class="row g-4 align-items-center">
               <!-- grid -->
-              <div class="grid">
+              <div class="grid col-lg-6">
+                <div class="row g-3 align-items-end mb-3">
+                  <div class="col-6 text-start">
+                    <img src="assets/images/restoran-1.jfif" alt="restoran-1" class="img-fluid w-100 rounded">
+                  </div>
+                  <div class="col-6 text-start">
+                    <img src="assets/images/restoran-2.jpg" alt="restoran-2" class="img-fluid w-75 rounded">
+                  </div>
+                </div>
+                <div class="row g-3 align-items-start">  
+                  <div class="col-6 text-end">
+                    <img src="assets/images/restoran-3.jpg" alt="restoran-3" class="img-fluid w-75 rounded">
+                  </div>
+                  <div class="col-6 text-end">
+                    <img src="assets/images/restoran-4.jpg" alt="restoran-4" class="img-fluid w-100 rounded">
+                  </div>
+                </div>
 
               </div>
 
               <!-- welcome to restorn -->
-               <div class="welcome">
-
-               </div>
-            </div>
-            
+               <div class="welcome col-lg-6">
+                <h5 class="text-capitalize text-start bold-500 me-2 light-color">about us</h5>
+                <span class="text-capitalize h1 mb-4 d-block bold-800">welcome to<i class="fa-solid fa-utensils light-color px-2"></i>restorn</span>
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ea placeat consequuntur inventore quibusdam voluptas suscipit. Dolores reiciendis alias eius.</p>
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ea placeat consequuntur inventore quibusdam voluptas suscipit. Dolores reiciendis alias eius.</p>
+                <div class="row g-4 mb-4">
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center border-start border-5 border-warning px-3">
+                      <h1 class="text-warning flex-shrink-0 mb-0 display-5 bold-600">15</h1>
+                      <div class="ps-4 h5 mb-0">
+                        <p class="mb-0 text-capitalize bold-300">years of</p>
+                        <h5 class="mb-0 text-uppercase bold-600">experince</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center border-start border-5 border-warning px-3">
+                      <h1 class="text-warning flex-shrink-0 mb-0 display-5 bold-600">50</h1>
+                      <div class="ps-4 h5 mb-0">
+                        <p class="mb-0 text-capitalize bold-300">populer</p>
+                        <h5 class="mb-0 text-uppercase bold-600">master chefs</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <a href="#" class="btn btn-warning py-3 mt-4 text-capitalize btn-shape-border col-12 col-lg-3">read more</a>
+                  </div>
+                </div>
+              </div>    
           </div>
         </div>
        </section>
       <!-- end about -->
 
       <!-- start menu -->
-       <section class="menu" id="menu">
+       <section class="menu py-5" id="menu">
         <div class="container">
           <div class="row">
-
+            <div class="title mb-5">
+              <h5 class="text-capitalize text-center light-color">food menu</h5>
+              <h2 class="text-capitalize text-center bold-700">most populer items</h2>
+            </div>
+            
             <!-- food-menu -->
-             <div class="food-menu">
+             <div class="food-menu tab-class text-center fadeInUp" data-wow-delay="">
+              <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                <li class="nav-item">
+                  <a href="#" class="d-flex align-items-center text-start mx-3 pb-3">
+                    <i class="fa-solid fa-burger text-warning h1"></i>
+                  </a>
+                </li>
+                
+              </ul>
 
              </div>
           </div>
@@ -185,7 +228,7 @@
           <div class="row">
 
             <!-- our masters chefs -->
-            <div class="team-member d-flex flex-column flex-md-row gap-3">
+            <div class="team-member d-flex flex-column flex-sm-row gap-3">
               <div class="card" col-12 col-md-6 col-lg-3 border-0">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
